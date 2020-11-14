@@ -9,8 +9,8 @@ To install the package, simply add the following to your Laravel installation's 
 
 ```json
 "require": {
-	"laravel/framework": "5.4",
-	"dlouvard/laracurl": "dev-master"  
+	"laravel/framework": "8.0",
+	"bluemountainteam/laracurl": "^8.0"  
 },
 ```
 
@@ -19,14 +19,14 @@ Run the usual `composer update` to pull the files.  Then, add the following **Se
 ```php
 'providers' => array(
 	...
-	'Dlouvard\Laracurl\LaracurlServiceProvider',
+	'BlueMountainTeam\Laracurl\LaracurlServiceProvider',
 );
 ```
 
 And finally add a new line to the aliases array:
 
 ```php
-		'Laracurl'	=>	'Dlouvard\Laracurl\Facades\Laracurl',
+		'Laracurl'	=>	'BlueMountainTeam\Laracurl\Facades\Laracurl',
 ```
 
 # Usage
